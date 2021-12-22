@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .account-settings__container,
+        .form-profile,
+        .input-set div,
+        .avatar div,
+        .update-profile {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .account-settings__container {
+            /* border: 1px solid #C4C4C4; */
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        
+        .header {
+            margin-left: 20px;
+        }
+        
+        .form-profile {
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 20px;
+            margin: 0 30px;
+            flex-wrap: wrap;
+        }
+        
+        #update-profile {
+            display: block !important;
+        }
+        
+        .input-set div {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 5px;
+        }
+        
+        .input-set div label {
+            min-width: 120px;
+        }
+        
+        .avatar img {
+            margin-bottom: 15px;
+        }
+        
+        .avatar div,
+        .update-profile {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="account-settings__container">
+        <div class="header">
+            <h1>Tài khoản của tôi</h1>
+        </div>
+        <div class="form-profile">
+            <div class="input-set">
+                <div>
+                    <label for="fname">Họ</label>
+                    <input type="text" name="fname" id="fname">
+                </div>
+                <div>
+                    <label for="lname">Tên</label>
+                    <input type="text" name="lname" id="lname">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div>
+                    <label for="phone">Số điện thoại</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+            </div>
+            <div class="avatar">
+                <div><img src="../Images/Laang/Laang1.jpg" alt="" style="width: 120px; height: 120px; border-radius: 50%;"></div>
+                <div><button>Thay đổi</button></div>
+            </div>
+        </div>
+
+        <div class="update-profile"><button id="update-profile">Cập nhật</button></div>
+    </div>
+</body>
+
+</html>
